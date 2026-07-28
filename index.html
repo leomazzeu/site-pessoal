@@ -71,6 +71,11 @@
   h2.title{font-family:var(--font-display);font-weight:800;font-size:26px;color:var(--ink);margin:0 0 6px;line-height:1.25;}
   p.lead{font-size:15.5px;color:var(--ink-dim);max-width:580px;margin:0 0 36px;}
 
+  .chain{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:800;font-size:17px;color:var(--ink-dim);margin:0 0 8px;flex-wrap:wrap;}
+  .chain .highlight{color:var(--farol);}
+  .chain .arrow{color:var(--farol-dark);font-weight:400;}
+  .chain-note{font-size:13px;color:var(--ink-dim);margin:0 0 32px;}
+
   .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:44px;}
   @media (max-width:760px){.pillars{grid-template-columns:1fr;}}
   .pillar{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px;}
@@ -144,6 +149,15 @@
     <p class="kicker">O que eu faço</p>
     <h2 class="title">Ajudo donos de negócio a enxergar o processo real da empresa antes de automatizar ou decidir.</h2>
     <p class="lead">Tecnologia entra pra ajudar, não pra complicar.</p>
+
+    <div class="chain">
+      <span>Pessoas</span>
+      <span class="arrow">→</span>
+      <span>Processos</span>
+      <span class="arrow">→</span>
+      <span class="highlight">Tecnologia</span>
+    </div>
+    <p class="chain-note">Nessa ordem. Pular etapa é o que trava a maioria dos negócios.</p>
 
     <div class="pillars">
       <div class="pillar">
