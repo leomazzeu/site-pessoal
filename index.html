@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Leonardo Mazzeu, Processo e Tecnologia para Negócios</title>
-<meta name="description" content="Ajudo donos de negócio a enxergar o processo real da empresa antes de automatizar ou decidir. Tecnologia e método a serviço da clareza.">
+<meta name="description" content="A maioria das empresas não tem problema de tecnologia. Tem problema de processo. Começo entendendo o negócio. Só depois escolho — ou descarto — a tecnologia.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://leonardomazzeu.com.br/">
 <meta property="og:title" content="Leonardo Mazzeu, Processo e Tecnologia para Negócios">
-<meta property="og:description" content="Ajudo donos de negócio a enxergar o processo real da empresa antes de automatizar ou decidir. Tecnologia e método a serviço da clareza.">
+<meta property="og:description" content="A maioria das empresas não tem problema de tecnologia. Tem problema de processo. Começo entendendo o negócio. Só depois escolho — ou descarto — a tecnologia.">
 <meta property="og:image" content="https://leonardomazzeu.com.br/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Leonardo Mazzeu, Processo e Tecnologia para Negócios">
-<meta name="twitter:description" content="Ajudo donos de negócio a enxergar o processo real da empresa antes de automatizar ou decidir. Tecnologia e método a serviço da clareza.">
+<meta name="twitter:description" content="A maioria das empresas não tem problema de tecnologia. Tem problema de processo. Começo entendendo o negócio. Só depois escolho — ou descarto — a tecnologia.">
 <meta name="twitter:image" content="https://leonardomazzeu.com.br/og-image.png">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Fraunces:ital,wght@0,600;1,600;1,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -103,7 +103,7 @@
   .pillar h3{font-family:var(--font-display);font-weight:700;font-size:16.5px;color:var(--ink);margin:0 0 8px;}
   .pillar p{font-size:13.5px;color:var(--ink-dim);margin:0;}
 
-  .process{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px;}
+  .process{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 32px;margin-bottom:32px;}
   @media (max-width:760px){.process{grid-template-columns:1fr;}}
   .step{position:relative;padding:20px 20px 20px 24px;border-left:2px solid var(--farol);transition:border-left-color .15s ease;}
   .step:hover{border-left-color:var(--farol-light);}
@@ -113,6 +113,20 @@
 
   .quote-block{border-left:2px solid var(--border);padding:4px 0 4px 20px;margin:36px 0;}
   .quote-block p{font-family:var(--font-accent);font-style:italic;font-weight:600;font-size:16.5px;color:var(--ink);line-height:1.5;margin:0;}
+
+  .problem-list{max-width:640px;margin:0 0 8px;border-top:1px solid var(--border);}
+  .problem-item{padding:16px 0;border-bottom:1px solid var(--border);font-size:17px;line-height:1.45;color:var(--ink);}
+
+  .services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:8px;}
+  @media (max-width:760px){.services{grid-template-columns:1fr;}}
+  .service{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px;transition:border-color .15s ease,transform .15s ease;}
+  .service:hover{border-color:rgba(37,227,154,.4);transform:translateY(-2px);}
+  .service .num{font-family:var(--font-display);font-weight:800;font-size:12px;color:var(--farol);letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px;}
+  .service h3{font-family:var(--font-display);font-weight:700;font-size:16.5px;color:var(--ink);margin:0 0 4px;}
+  .service .svc-tag{font-family:var(--font-accent);font-style:italic;font-weight:600;font-size:13.5px;color:var(--ink-dim);margin:0 0 14px;}
+  .svc-list{list-style:none;margin:0;padding:0;}
+  .svc-list li{position:relative;padding:4px 0 4px 16px;font-size:13px;line-height:1.5;color:var(--ink-dim);}
+  .svc-list li::before{content:"·";position:absolute;left:2px;top:4px;color:var(--farol);font-weight:700;}
 
   .footnote{font-size:12px;color:var(--ink-dim);margin-top:8px;}
 
@@ -125,16 +139,17 @@
   @media (max-width:760px){.about-grid{flex-direction:column;}}
 
   .connect-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
+  .section-foot{margin-top:28px;font-size:13px;color:var(--ink-dim);}
+  .section-foot a{color:var(--farol-light);text-decoration:none;}
+  .section-foot a:hover{text-decoration:underline;}
 
-  .tools-strip{margin-top:34px;}
-  .tools-strip-label{font-size:12px;color:var(--ink-dim);margin:0 0 12px;}
-  .chips{display:flex;flex-wrap:wrap;gap:10px;}
-  .chip{display:inline-block;background:var(--panel);border:1px solid var(--border);color:var(--ink-dim);border-radius:999px;padding:7px 14px;font-size:13px;line-height:1.3;transition:border-color .15s ease,color .15s ease;}
-  .chip:hover{border-color:var(--farol);color:var(--ink);}
+  .about-jb{margin-top:28px;padding-top:22px;border-top:1px solid var(--border);max-width:600px;}
+  .about-jb p{font-size:14px;color:var(--ink-dim);margin:0 0 16px;}
 
   footer{padding:36px 0 60px;text-align:center;}
   footer p{font-size:12.5px;color:var(--ink-dim);margin:6px 0;}
   footer a{color:var(--farol-light);text-decoration:none;}
+  .tools-line{max-width:680px;margin:0 auto 20px;font-size:12.5px;line-height:1.6;color:var(--ink-dim);}
 
   .whatsapp-float{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:var(--farol);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);z-index:50;transition:transform .15s ease, background .15s ease;}
   .whatsapp-float:hover{background:var(--farol-light);transform:scale(1.06);}
@@ -165,10 +180,12 @@
       <svg class="ico-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
     </button>
     <nav class="links" id="nav-links">
+      <a href="#hero">Início</a>
+      <a href="#problemas">Problemas</a>
+      <a href="#metodologia">Como trabalho</a>
+      <a href="#servicos">Serviços</a>
       <a href="#sobre">Sobre</a>
-      <a href="#o-que-eu-faco">O que eu faço</a>
-      <a href="#instituto-jb">Instituto JB</a>
-      <a href="#conecte-se">Contato</a>
+      <a href="#contato">Contato</a>
     </nav>
   </div>
 </header>
@@ -177,128 +194,170 @@
 
   <section class="hero reveal" id="hero">
     <div class="text">
-      <p class="kicker">Leonardo Mazzeu · Processo, Método e Tecnologia</p>
-      <h1>O processo real da sua empresa, <em>claro antes de decidir.</em></h1>
-      <p class="sub">Tecnologia e método a serviço da clareza, nunca do hype.</p>
-      <p class="cred">Consultor no Instituto JB</p>
-      <a href="#o-que-eu-faco" class="btn">Veja como eu trabalho</a>
+      <p class="kicker">Leonardo Mazzeu · Processo e Tecnologia para Negócios</p>
+      <h1>A maioria das empresas não tem problema de tecnologia. Tem <em>problema de processo.</em></h1>
+      <p class="sub">Começo entendendo o negócio. Só depois escolho — ou descarto — a tecnologia.</p>
+      <p class="cred">Consultor Júnior — frente de tecnologia, Instituto JB</p>
+      <a href="#metodologia" class="btn">Veja como eu trabalho →</a>
     </div>
     <div class="photo">
       <img src="minha-foto-perfil.png?v=2" alt="Leonardo Mazzeu">
     </div>
   </section>
 
-  <section class="reveal" id="o-que-eu-faco">
-    <p class="kicker">O que eu faço</p>
-    <h2 class="title">Processo antes de tecnologia.</h2>
-    <p class="lead">Ajudo donos de negócio a enxergar o processo real da empresa antes de automatizar ou decidir. Tecnologia entra pra ajudar, não pra complicar.</p>
+  <section class="reveal" id="problemas">
+    <p class="kicker">Talvez não seja o que você pensa</p>
+    <h2 class="title">Talvez o problema não seja a falta de <em>ferramenta.</em></h2>
+    <p class="lead">Veja se você reconhece alguma dessas situações na sua operação.</p>
 
-    <div class="chain">
-      <span>Pessoas</span>
-      <span class="arrow">→</span>
-      <span>Processos</span>
-      <span class="arrow">→</span>
-      <span class="highlight">Tecnologia</span>
-    </div>
-    <p class="chain-note">Nessa ordem. Pular etapa é o que trava a maioria dos negócios.</p>
-
-    <div class="pillars">
-      <div class="pillar">
-        <p class="num">Processo</p>
-        <h3>O mapa antes do atalho</h3>
-        <p>Enxergar como o processo realmente funciona hoje, gargalos e tudo, antes de mexer em qualquer ferramenta.</p>
-      </div>
-      <div class="pillar">
-        <p class="num">Método</p>
-        <h3>Decisão com critério</h3>
-        <p>Critérios claros pra decidir, não só instinto ou urgência do dia a dia.</p>
-      </div>
-      <div class="pillar">
-        <p class="num">Tecnologia e IA</p>
-        <h3>Automação com propósito</h3>
-        <p>IA e automação aplicadas em cima de processo já mapeado, nunca como atalho pra bagunça.</p>
-      </div>
+    <div class="problem-list">
+      <div class="problem-item">Você manda um orçamento e depois nunca mais fala com o cliente.</div>
+      <div class="problem-item">Seu vendedor não atualiza o CRM — e você não sabe o que está acontecendo nas negociações.</div>
+      <div class="problem-item">A empresa investe para trazer clientes, mas perde oportunidades depois que eles chegam.</div>
+      <div class="problem-item">Seu cliente compra, some — e só volta quando lembra que precisa de você.</div>
+      <div class="problem-item">Tudo depende de você para funcionar.</div>
+      <div class="problem-item">Sua equipe trabalha muito, mas ninguém sabe exatamente onde as oportunidades estão.</div>
+      <div class="problem-item">As informações vivem no WhatsApp de cada vendedor, não num lugar que você consegue ver.</div>
+      <div class="problem-item">A ferramenta foi implementada. O processo continua o mesmo.</div>
     </div>
 
-    <h3 style="font-family:var(--font-display);font-weight:800;font-size:18px;color:var(--ink);margin:0 0 18px;">Como eu trabalho</h3>
+    <div class="quote-block">
+      <p>O que parece um problema de pessoa — ou de ferramenta — quase sempre é um problema de processo. A tecnologia não conserta processo ruim. Quando o processo está certo, a tecnologia potencializa. Quando não está, ela só faz a bagunça andar mais rápido.</p>
+    </div>
+  </section>
+
+  <section class="reveal" id="metodologia">
+    <p class="kicker">Como eu trabalho</p>
+    <h2 class="title">Tecnologia é consequência do <em>diagnóstico.</em></h2>
+    <p class="lead">Sigo uma lógica antes de recomendar qualquer solução. Cada etapa depende da anterior.</p>
+
     <div class="process">
       <div class="step">
-        <p class="n">1 · Mapeio</p>
-        <h3>Entendo o que já existe</h3>
-        <p>Como o processo da empresa funciona hoje (ou não funciona), antes de mexer em qualquer ferramenta.</p>
+        <p class="n">01 · Entender o negócio</p>
+        <h3>O que a empresa precisa alcançar</h3>
+        <p>Quais são os objetivos reais — não os sintomas imediatos?</p>
       </div>
       <div class="step">
-        <p class="n">2 · Redesenho</p>
-        <h3>Defino o processo ideal</h3>
-        <p>Como o processo deveria funcionar, com tecnologia entrando só quando faz sentido pro negócio, não por padrão.</p>
+        <p class="n">02 · Entender o processo</p>
+        <h3>Como o trabalho acontece hoje</h3>
+        <p>De verdade. Não como deveria acontecer — como acontece.</p>
       </div>
       <div class="step">
-        <p class="n">3 · Sustento</p>
-        <h3>Treino e acompanho</h3>
-        <p>Treinamento do time, acompanhamento e melhoria contínua, pra não voltar pra bagunça em três meses.</p>
+        <p class="n">03 · Encontrar gargalos</p>
+        <h3>Onde estão as perdas</h3>
+        <p>Retrabalho, falta de visibilidade — o que trava sem que ninguém perceba?</p>
+      </div>
+      <div class="step">
+        <p class="n">04 · Desenhar melhorias</p>
+        <h3>O que reorganizar antes</h3>
+        <p>O que pode ser simplificado, padronizado ou reorganizado antes de qualquer ferramenta entrar?</p>
+      </div>
+      <div class="step">
+        <p class="n">05 · Avaliar tecnologia</p>
+        <h3>O que realmente faz sentido</h3>
+        <p>Qual automação, integração, CRM ou IA faz sentido para esse processo específico?</p>
+      </div>
+      <div class="step">
+        <p class="n">06 · Implementar</p>
+        <h3>Transformar em operação</h3>
+        <p>Quando faz sentido, transformar a solução em operação — e garantir que funcione na prática.</p>
       </div>
     </div>
 
     <div class="quote-block">
       <p>Automação só funciona em cima de processo que já funciona. Automatizar bagunça só faz a bagunça andar mais rápido.</p>
     </div>
-    <p class="footnote">Isso tudo tem nome técnico, mas o que importa é o resultado, não o termo.</p>
-
-    <div class="tools-strip">
-      <p class="tools-strip-label">Ferramentas que uso</p>
-      <div class="chips">
-        <span class="chip">n8n</span>
-        <span class="chip">Make</span>
-        <span class="chip">Zapier</span>
-        <span class="chip">Power Automate</span>
-        <span class="chip">APIs &amp; webhooks</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Excel</span>
-        <span class="chip">WhatsApp Business API</span>
-        <span class="chip">Agendor</span>
-        <span class="chip">Claude Code</span>
-      </div>
-    </div>
   </section>
 
-  <section class="reveal" id="instituto-jb">
-    <p class="kicker">Onde isso acontece</p>
-    <h2 class="title">Levo tudo isso pra dentro do <em>Instituto JB.</em></h2>
-    <div class="jb-card">
-      <p>Sou Consultor Júnior e responsável pela frente de tecnologia no Instituto JB. Atuamos com consultoria de negócios, educação corporativa e treinamentos in-company. É lá que essas ideias saem do papel e viram resultado pra outras empresas.</p>
-      <a href="https://profjosebenedito.com.br" class="btn-ghost" target="_blank" rel="noopener">Conhecer o Instituto JB</a>
+  <section class="reveal" id="servicos">
+    <p class="kicker">O que eu faço</p>
+    <h2 class="title">Do diagnóstico à implementação — na ordem que <em>funciona.</em></h2>
+    <p class="lead">Dependendo do momento da empresa, o trabalho pode começar em etapas diferentes. O que não muda é a lógica: negócio antes de ferramenta.</p>
+
+    <div class="services">
+      <div class="service">
+        <p class="num">01</p>
+        <h3>Diagnóstico e processos</h3>
+        <p class="svc-tag">O ponto de partida.</p>
+        <ul class="svc-list">
+          <li>Análise da operação — entender como o negócio realmente funciona hoje</li>
+          <li>Mapeamento de processos — documentar o fluxo real do trabalho</li>
+          <li>Identificação de gargalos — encontrar perdas, retrabalho ou falta de visibilidade</li>
+          <li>Desenho de melhorias — propor o que pode ser simplificado ou reorganizado</li>
+        </ul>
+      </div>
+      <div class="service">
+        <p class="num">02</p>
+        <h3>Operação comercial</h3>
+        <p class="svc-tag">O processo de vendas e relacionamento com clientes.</p>
+        <ul class="svc-list">
+          <li>Estruturação do processo comercial — do primeiro contato ao fechamento</li>
+          <li>Implementação e organização de CRM — o sistema que funciona, não a ferramenta pelo nome</li>
+          <li>Acompanhamento de oportunidades — para nenhuma negociação ser perdida por falta de follow-up</li>
+          <li>Relacionamento com a base — a base existente como parte da operação, não como lista esquecida</li>
+        </ul>
+      </div>
+      <div class="service">
+        <p class="num">03</p>
+        <h3>Tecnologia aplicada</h3>
+        <p class="svc-tag">Ferramentas e sistemas quando o processo já está claro.</p>
+        <ul class="svc-list">
+          <li>Automações — para eliminar retrabalho manual após o processo estar mapeado</li>
+          <li>Integrações entre sistemas — para as ferramentas que a empresa já usa funcionarem juntas</li>
+          <li>APIs e webhooks — conexões entre plataformas quando necessário</li>
+        </ul>
+      </div>
+      <div class="service">
+        <p class="num">04</p>
+        <h3>IA aplicada</h3>
+        <p class="svc-tag">Inteligência artificial com propósito específico, não como tendência.</p>
+        <ul class="svc-list">
+          <li>Agentes de IA para processos definidos — não IA genérica, mas IA com função clara</li>
+          <li>Automações inteligentes — onde velocidade e raciocínio fazem diferença real</li>
+          <li>Aplicações específicas — análise, triagem, resposta — quando o caso justifica</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="reveal" id="sobre">
     <p class="kicker">Sobre mim</p>
-    <h2 class="title">Tecnologia sempre foi <em>talento, não plano.</em></h2>
+    <h2 class="title">Tecnologia sempre fez sentido. Negócio é o que estou <em>aprofundando.</em></h2>
     <div class="about-grid">
       <div class="photo">
         <img src="minha-foto-perfil-2.png" alt="Leonardo Mazzeu">
       </div>
       <div class="text">
-        <p>Sou formado em Análise e Desenvolvimento de Sistemas e hoje me aprofundo em arquitetura de processos. Sempre fui a pessoa a quem recorrem quando o assunto é tecnologia. Curiosidade e capacidade de resolver, isso é o que me diferencia, mais do que qualquer certificado.</p>
-        <p>Hoje sou Consultor Júnior e responsável pela frente de tecnologia no Instituto JB, em Paraguaçu, Minas Gerais. Estou unindo tecnologia e negócio da forma que sempre fez sentido pra mim, transformando o complexo em simples, aplicável, real.</p>
+        <p>Sou formado em Análise e Desenvolvimento de Sistemas. Tecnologia é onde sempre me senti à vontade — desenvolvimento, automação, sistemas, integrações.</p>
+        <p>Com o tempo, percebi que a maioria dos problemas que as empresas tentam resolver com tecnologia não são problemas de tecnologia. São problemas de processo, de operação, de como o trabalho está organizado.</p>
+        <p>Hoje sou Consultor Júnior e responsável pela frente de tecnologia no Instituto JB, em Paraguaçu, Minas Gerais — uma consultoria de negócios onde essas ideias saem do papel e chegam à operação de empresas reais.</p>
+        <p>Tenho 26 anos. Não vou inventar uma trajetória que ainda estou construindo. O que posso oferecer é raciocínio analítico, honestidade sobre o diagnóstico e a capacidade de conectar problema de negócio com solução técnica — sem transformar tecnologia em centro quando ela não deveria ser.</p>
+        <div class="about-jb">
+          <p>O Instituto JB é onde esse trabalho acontece na prática — consultoria de negócios, educação corporativa e treinamentos in-company.</p>
+          <a href="https://profjosebenedito.com.br" class="btn-ghost" target="_blank" rel="noopener">Conhecer o Instituto JB</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="reveal" id="conecte-se">
-    <p class="kicker">Conecte-se</p>
-    <h2 class="title">Acompanhe <em>o processo.</em></h2>
-    <p class="lead">Documento bastidores, aprendizados e o que estou construindo no Instagram. Se quiser trocar ideia, manda um e-mail.</p>
+  <section class="reveal" id="contato">
+    <p class="kicker">Vamos conversar</p>
+    <h2 class="title">Vamos entender o que está acontecendo na sua <em>operação.</em></h2>
+    <p class="lead">Não precisa ter tudo mapeado antes de entrar em contato. É exatamente essa conversa que ajuda a entender por onde começar.</p>
     <div class="connect-links">
-      <a href="https://wa.me/5535997707672?text=Ol%C3%A1%2C%20Leonardo!%20Vim%20pelo%20seu%20site." class="btn" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="https://instagram.com/leonardomazzeu" class="btn" target="_blank" rel="noopener">Instagram</a>
-      <a href="mailto:leonardomazzeudasilva@gmail.com" class="btn-ghost">E-mail</a>
+      <a href="https://wa.me/5535997707672?text=Ol%C3%A1%2C%20Leonardo%21%20Quero%20entender%20como%20voc%C3%AA%20pode%20ajudar%20minha%20opera%C3%A7%C3%A3o." class="btn" target="_blank" rel="noopener">Falar no WhatsApp →</a>
+      <a href="mailto:leonardomazzeudasilva@gmail.com" class="btn-ghost">Mandar um e-mail</a>
     </div>
+    <p class="section-foot">Produzo conteúdo sobre negócios, processos e tecnologia no Instagram e LinkedIn.<br>
+      → <a href="https://instagram.com/leonardomazzeu" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/in/leonardomazzeu" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
   </section>
 
 </div>
 
 <footer>
-  <p>Precisa estruturar isso na sua empresa? <a href="#instituto-jb">Fale com o Instituto JB</a>.</p>
+  <p class="tools-line">Trabalho com automação (n8n, Make), CRM (Agendor, Kommo), integrações via API e IA aplicada — sempre a partir do diagnóstico, nunca como ponto de partida.</p>
+  <p>Precisa estruturar isso na sua empresa? <a href="#contato">Vamos conversar</a>.</p>
   <p>© 2026 Leonardo Mazzeu</p>
 </footer>
 
